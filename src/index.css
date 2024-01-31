@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+.page-width {
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
