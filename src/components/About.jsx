@@ -19,14 +19,14 @@ function About() {
               Front-End Developer <br />based in Scotland, UK
             </h4>
             <p className="font-Mulish text-gray-500">
-              Hi, my name is David, but my friends call me Marv. I'm a Frontend Developer. I prefer to work from a design, but I'm also OK with a firm idea. 
+              Hi, my name is David, but my friends call me Marv. I'm a Frontend Developer. I prefer to work from a design, but I'm also OK with developing from a firm vision. 
               <br />
               <br />
               Currently my main stack is React/Next.js in combination with
               Tailwind CSS. For e-commerce builds I use the Shopify CMS.
             </p>
 
-        
+
           </div>
         </div>
       </div>

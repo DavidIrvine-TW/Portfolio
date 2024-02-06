@@ -2,14 +2,16 @@ import React from "react";
 import IconGitHub from "../icons/IconGitHub";
 import IconLinkedIn from "../icons/IconLinkedIn";
 import HeroImgGray from "../assets/HeroImgGray.jpg";
+import portfolioHeroImageGray from '../assets/portfolioHeroImageGray.jpg'
 import waving from '../assets/waving.png'
 
 
 function Hero() {
   return (
   
-      <section className=" z-[-1] h-screen w-full page-width flex items-center justify-center ">
-        <div className="max-w-[1000px]">
+      <section className=" z-[-1] h-screen w-full page-width flex justify-center pt-[6rem] ">
+     
+        <div className="max-w-[1000px] ">
           <div className="flex gap-[6rem] justify-center items-center w-full ">
             <div className=" flex flex-col max-w-[500px]">
               <h2 className="font-Rubik font-bold text-title-dk flex flex-col text-header-txt my-[1.5rem] relative">
@@ -33,7 +35,7 @@ function Hero() {
               </div>
             </div>
 
-            <div className="hero-img w-[350px] h-[350px] overflow-hidden relative">
+            <div className="hero-img max-w-[350px] h-[350px] overflow-hidden relative">
               <img src={HeroImgGray} alt="profile image" />
               {/* <div className="hero-img-overlay"></div> */}
             </div>

@@ -14,12 +14,45 @@
   position: relative;
   background-color: #FAF9F6;
 }
+
+
 /* header menu */
 @layer components {
   .menu-item {
   @apply hover:text-babyblue cursor-pointer font-Rubik font-bold text-l-dk transition-colors duration-200 ;
   }
 }
+
+/* projects */
+@layer components {
+  .project-container {
+  @apply  flex gap-[2rem] mx-auto  mb-[8rem];
+  }
+}
+
+@layer components {
+  .project-info-container {
+  @apply  p-[.5rem] w-[50%] relative;
+  }
+}
+
+@layer components {
+  .project-title {
+  @apply  font-Rubik font-bold text-l-dk uppercase mb-[1rem];
+  }
+}
+
+@layer components {
+  .project-details {
+  @apply font-Mulish text-center text-gray-500 mb-[2rem];
+  }
+}
+@layer components {
+  .project-details-label {
+  @apply font-Mulish text-gray-500;
+  }
+}
+
 
 .hero-img {
   border: 4px solid #292929;
