@@ -1,0 +1,8 @@
+{
+    "name" : "TrailerView",
+    "tech" : ["nextjs", "mongodb", "tailwind", "nodejs", "mongoose"],
+    "blurb" : "An entertainment app powered by the TMDB API. The primary feature of Trailerview allows users immediate access to all TMDB's TV and movie YouTube content across all titles and collections upon initial page load. Users can sign-in using NextAuth to allow save/load of bookmarks across devices.",
+    "tags" : ["#app", "#nextAuth", "#fullstack", "#TMDB", "#swiperjs", "#tilt", "#toastify", "#materialui", "#youtube","#npm", "#nextjs", "#mongoose", "#nodejs", "#tailwind","#mongodb","#api"],
+    "livelink" : "https://trailerview-davidirvine-tw.vercel.app/",
+    "github" : "https://github.com/DavidIrvine-TW/trailerview"
+}

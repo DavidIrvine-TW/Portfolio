@@ -1,10 +1,19 @@
 import React from "react";
 import trailerview from "../assets/trailerview.jpg";
-import kanban from "../assets/kanban.png";
+import kanban from "../assets/kanban.jpg";
 import vapestore from "../assets/vapestore.jpg";
 import shopify from "../assets/icon-shopify.svg";
 import iconLink from "../assets/icon-link.svg";
 import IconGitHub from "../icons/IconGitHub";
+import Iconghub from "../icons/Iconghub";
+import Briefcase from '../assets/briefcase.png'
+import OnlineShopping from '../assets/online-shopping.png'
+import Task from '../assets/task.png'
+import Video from '../assets/video.png'
+
+import vapesterData from "../assets/vapester.json";
+import kanbanData from "../assets/kanban.json";
+import trailerviewData from "../assets/trailerview.json";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,34 +27,30 @@ const copyToClipboard = (text) => {
     .writeText(text)
     .then(() => {
       alert("Password copied to clipboard: ", text);
-     
     })
     .catch((error) => {
       console.error("Failed to copy text:", error);
-     
     });
 };
 
 const Projects = () => {
   return (
-    <section className="page-width py-[10rem] flex">
-      <div className="max-w-[1000px] mx-auto ">
+    <section id="portfolio" className="page-width pb-[5rem] flex">
+      <div className="max-w-[80%] mx-auto ">
         <div className="mb-[3rem]">
-          <h3 className="font-bold text-babyblue font-Mulish mb-[1rem] text-[1.25rem]">
-            PORTFOLIO
-          </h3>
-          <h4 className="font-Rubik font-bold text-header-txt mb-[1.25rem] text-about-heading-dk ">
+          <h3 className="section-heading flex gap-[1rem]">PORTFOLIO <img src={Briefcase} alt="briefcase icon" className="w-[30px] h-[30px]"/></h3>
+          <h4 className="section-subheading">
             Each project is a unique piece of development
           </h4>
         </div>
 
         {/* vapestore */}
         <div className="project-container">
-          <div className="project-swiper w-[50%] max-h-[400px] relative border overflow-hidden rounded object-cover ">
+          <div className="swiper-container border-2">
             <Swiper
               className="vapeSwiper w-full h-full"
               pagination={{
-                type: "fraction",
+                // type: "fraction",
               }}
               modules={[Navigation, Pagination]}
               spaceBetween={16}
@@ -69,114 +74,126 @@ const Projects = () => {
             </Swiper>
           </div>
 
-          <div className="project-info-container ">
-            <p className="project-title text-center">Vapester</p>
+          <div className="project-info-container">
+            <h4 className="project-title flex items-center gap-[1rem]">{vapesterData.name} <img src={OnlineShopping} alt="shopping icon" className="w-[30px] h-[30px]"/></h4>
 
-            <p className="project-details">
-              A from scratch custom Shopify 2.0 storefront. The Vapester store
-              template has complete end to end functionality and includes,
-              product search, filtering, cart and checkout.
-            </p>
+            <p className="project-details">{vapesterData.blurb}</p>
 
-            <div className="project-tech flex gap-[1rem] items-center">
-              <span className="project-details-label">Tech used:</span>
-              <img
-                src="https://skillicons.dev/icons?i=html"
-                alt="skills-icons"
-              />
-              <img
-                src="https://skillicons.dev/icons?i=css"
-                alt="skills-icons"
-              />
-              <img src="https://skillicons.dev/icons?i=js" alt="skills-icons" />
-              <img src={shopify} />
+            <div className="project-tech-container  ">
+              {vapesterData.tech.map((tech, index) => {
+                return (
+                  <img
+                    className="project-skills-img"
+                    key={index}
+                    src={`https://skillicons.dev/icons?i=${tech}`}
+                    alt={tech}
+                  />
+                );
+              })}
+              <img src={shopify} alt="Shopify" />
             </div>
 
             <div className="project-tags">
-              <p className="project-details-label">Features</p>
-              <span className="project-type">#e-commerce</span>
-              <span className="project-type">#store</span>
-              <span className="project-type">#template</span>
-              <span className="project-type">#filter</span>
-              <span className="project-type">#filter</span>
+              {vapesterData.tags.map((tag, index) => {
+                return (
+                  <span className="tag" key={index}>
+                    {tag}
+                  </span>
+                );
+              })}
             </div>
 
-            <div className="project-links">
-              <button className="flex">
-                Code
-                <span>
-                  <IconGitHub />
+            <div className="project-links-container mt-[1.5rem]">
+              <p className="flex gap-[.5rem] text-gray-500 text-[.8rem]">
+                *Password:
+                <span
+                  className="cursor-pointer border hover:border-header-txt rounded px-[.5rem] hover:bg-slate-200 text-header-txt font-bold"
+                  onClick={() => copyToClipboard("eamaos")}
+                >
+                  COPY TO CLIPBOARD
                 </span>
-              </button>
-              <span>Store password:</span>{" "}
-              <span
-                className="cursor-pointer"
-                onClick={() => copyToClipboard("eamaos")}
-              >
-                eamaos
-              </span>
-              <a
-                className="flex items-center gap-[.25rem]"
-                href="https://marvdev-newstore.myshopify.com/"
-                target="_blank"
-              >
-                Live <img src={iconLink} alt="icon link" />
-              </a>
+              </p>
+
+              <div className="flex gap-[1rem] mt-[1.5rem]">
+                <a
+                  href={vapesterData.github}
+                  target="_blank"
+                  className="btn-secondary "
+                >
+                  Code <Iconghub />{" "}
+                </a>
+
+                <a
+                  className="btn-secondary "
+                  href={vapesterData.livelink}
+                  target="_blank"
+                >
+                  Live Demo
+                  <img src={iconLink} alt="icon link" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Kanban */}
-
         <div className="project-container">
-          <div className="w-[50%] relative border ">
-            <p className="project-title text-center">Kanban Board</p>
+          <div className="project-info-container ">
+            <p className="project-title flex items-center gap-[1rem]">{kanbanData.name} <img src={Task} alt="task icon" className="w-[30px] h-[30px]"/></p>
 
-            <p className="project-details">
-              An agile project management tool designed to help visualize work,
-              limit work-in-progress, and maximize efficiency (or flow).
-            </p>
+            <p className="project-details">{kanbanData.blurb}</p>
+            <p className="project-details-features">{kanbanData.features}</p>
 
-            <div className="project-tech flex gap-[1rem]">
-              <span>TECH:</span>
-              <img
-                src="https://skillicons.dev/icons?i=react"
-                alt="skills-icons"
-              />
-              <img
-                src="https://skillicons.dev/icons?i=firebase"
-                alt="skills-icons"
-              />
-              <img
-                src="https://skillicons.dev/icons?i=nodejs"
-                alt="skills-icons"
-              />
-              <img
-                src="https://skillicons.dev/icons?i=tailwind"
-                alt="skills-icons"
-              />
-              <img
-                src="https://skillicons.dev/icons?i=figma"
-                alt="skills-icons"
-              />
+            <div className="project-tech-container">
+              {kanbanData.tech.map((tech, index) => {
+                return (
+                  <img
+                    className="project-skills-img"
+                    key={index}
+                    src={`https://skillicons.dev/icons?i=${tech}`}
+                    alt={tech}
+                  />
+                );
+              })}
             </div>
+
             <div className="project-tags">
-              <span className="project-type">#app</span>
-              <span className="project-type">#redux</span>
-              <span className="project-type">#fullstack</span>
+              {kanbanData.tags.map((tag, index) => {
+                return (
+                  <span className="tag" key={index}>
+                    {tag}
+                  </span>
+                );
+              })}
             </div>
 
-            <div className="project-links">
-              <button>CODE</button>
-              <button>LIVE</button>
+            <div className="project-links-container">
+              <div className="flex gap-[1rem] mt-[1.5rem]">
+                <a
+                  href={kanbanData.github}
+                  target="_blank"
+                  className="btn-secondary "
+                >
+                  Code <Iconghub />{" "}
+                </a>
+
+                <a
+                  className="btn-secondary "
+                  href={kanbanData.livelink}
+                  target="_blank"
+                >
+                  Live Demo
+                  <img src={iconLink} alt="icon link" />
+                </a>
+              </div>
             </div>
           </div>
 
-          <div className="w-[50%] max-h-[400px] relative border overflow-hidden rounded">
+          <div className="swiper-container ">
             <Swiper
-              className="kanbanSwiper w-full h-full"
+              className="kanbanSwiper w-full h-full border-2"
               pagination={{
-                type: "fraction",
+                // type: "fraction",
               }}
               modules={[Navigation, Pagination]}
               spaceBetween={16}
@@ -201,9 +218,12 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* <hr className="my-[2rem]"></hr> */}
+
         {/* trailerview */}
+
         <div className="project-container">
-          <div className="w-[50%] max-h-[400px] relative border overflow-hidden rounded">
+          <div className="swiper-container border-2 shadow-md">
             <img
               className="object-cover "
               src={trailerview}
@@ -211,45 +231,54 @@ const Projects = () => {
             />
           </div>
 
-          <div className="w-[50%] relative border ">
-            <p className="project-title text-center">Trailerview</p>
+          <div className="w-[50%] relative ">
+            <p className="project-title items-center gap-[1rem] flex">{trailerviewData.name} <img src={Video} alt="video icon" className="w-[30px] h-[30px]"/></p>
 
-            <p className="project-details">
-              An entertainment app powered by <span><a className="cursor-pointer hover:text-underline" href="https://www.themoviedb.org/" target="_blank">TMDB</a></span>. The primary
-              design feature grants users immediate access to all TMDB Youtube
-              content across all titles and collections upon initial page load.
-              Users can sign-in using NextAuth to allow save/load of bookmarks
-              across devices.
-            </p>
+            <p className="project-details">{trailerviewData.blurb}</p>
 
-            <div className="project-tech flex gap-[1rem]">
-              <span>TECH:</span>
-              <img
-                src="https://skillicons.dev/icons?i=nextjs"
-                alt="skills-icons"
-              />
-              <img
-                src="https://skillicons.dev/icons?i=nodejs"
-                alt="skills-icons"
-              />
-              <img
-                src="https://skillicons.dev/icons?i=mongodb"
-                alt="skills-icons"
-              />
-              <img
-                src="https://skillicons.dev/icons?i=tailwind"
-                alt="skills-icons"
-              />
+            <div className="project-tech-container">
+              {trailerviewData.tech.map((tech, index) => {
+                return (
+                  <img
+                    className="project-skills-img"
+                    key={index}
+                    src={`https://skillicons.dev/icons?i=${tech}`}
+                    alt={tech}
+                  />
+                );
+              })}
             </div>
+
             <div className="project-tags">
-              <span className="project-type">#app</span>
-              <span className="project-type">#redux</span>
-              <span className="project-type">#fullstack</span>
+              {/* <p className="project-details-label">Tags:</p>  */}
+              {trailerviewData.tags.map((tag, index) => {
+                return (
+                  <span className="tag" key={index}>
+                    {tag}
+                  </span>
+                );
+              })}
             </div>
 
-            <div className="project-links">
-              <button>CODE</button>
-              <button>LIVE</button>
+            <div className="project-links-container">
+              <div className="flex gap-[1rem] mt-[1.5rem]">
+                <a
+                  href={trailerviewData.github}
+                  target="_blank"
+                  className="btn-secondary "
+                >
+                  Code <Iconghub />{" "}
+                </a>
+
+                <a
+                  className="btn-secondary "
+                  href={trailerviewData.livelink}
+                  target="_blank"
+                >
+                  Live Demo
+                  <img src={iconLink} alt="icon link" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

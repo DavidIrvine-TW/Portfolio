@@ -1,4 +1,9 @@
 {
     "name" : "Vapester",
-    "tech" : []
+    "tech" : ["html" , "css", "js"],
+    "blurb" : "A from scratch custom Shopify 2.0 storefront. The Vapester storefront template is a complete e-commerce solution. This multipage storefront inludes product collections, search, filtering, cart and checkout pages. All store data is held and managed by the Shopify CMS.",
+    "tags" : ["#e-commerce", "#html", "#css", "#javascript", "#shopify","#liquid", "#template", "#ajax", "#leafletjs", "#swiperjs", "#tilt", "#fullstack" ],
+    "github" : "https://github.com/DavidIrvine-TW/vapester",
+    "livelink" : "https://marvdev-newstore.myshopify.com"
+
 }

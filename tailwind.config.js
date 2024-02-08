@@ -9,7 +9,8 @@ export default {
       colors: {
         "bgOffWhite": "#FAF9F6",
         "header-txt": "#292929",
-        "babyblue" : "#147efb"
+        "babyblue" : "#147efb",
+        "babybluelight": "#6ea6ff"
       },
 
       fontSize: {
@@ -25,6 +26,11 @@ export default {
         }],
 
         'l-dk': ['1.125rem', {
+          lineHeight: '1.4375rem',
+          letterSpacing: '.5px',
+          fontWeight: '700'
+        }],
+        'project-title-dk': ['1.5rem', {
           lineHeight: '1.4375rem',
           letterSpacing: '.5px',
           fontWeight: '700'

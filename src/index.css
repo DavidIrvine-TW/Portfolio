@@ -8,11 +8,47 @@
 .page-width {
   max-width: 1440px;
   margin: 0 auto;
- 
 }
+
 #root {
   position: relative;
   background-color: #FAF9F6;
+}
+
+
+/* section headings */
+@layer components {
+  .section-heading {
+  @apply font-bold text-babyblue font-Mulish mb-[1rem] text-[1.25rem] tracking-[.5px];
+  }
+}
+@layer components {
+  .section-subheading {
+  @apply font-Rubik font-bold text-header-txt mb-[1.25rem] text-about-heading-dk ;
+  }
+}
+/* body-text */
+@layer components {
+  .body-text {
+  @apply font-Mulish text-gray-500 text-[1rem];
+  }
+}
+/* buttons */
+
+@layer components {
+  .btn-primary {
+  @apply cursor-pointer items-center w-max px-[1rem] py-[.5rem] border font-bold rounded mt-[2rem] mb-[1rem] bg-babyblue text-white uppercase hover:bg-babybluelight hover:scale-105 tracking-[1px];
+  }
+}
+@layer components {
+  .btn-primary-b {
+  @apply cursor-pointer items-center w-max px-[1rem] py-[.5rem] border font-bold rounded mt-[2rem] mb-[1rem] bg-header-txt text-white uppercase hover:bg-babyblue tracking-[1px];
+  }
+}
+@layer components {
+  .btn-secondary {
+  @apply flex items-center gap-[.5rem] border bg-header-txt text-white hover:border-header-txt py-[.25rem] px-[.75rem] rounded hover:bg-slate-200;
+  }
 }
 
 
@@ -26,33 +62,96 @@
 /* projects */
 @layer components {
   .project-container {
-  @apply  flex gap-[2rem] mx-auto  mb-[8rem];
+  @apply  flex gap-[3rem] mx-auto  mb-[5rem] border-2 p-[2rem]  rounded bg-white;
+  }
+}
+@layer components {
+  .swiper-container {
+  @apply  w-[50%] max-h-[400px] relative overflow-hidden rounded shadow-md;
   }
 }
 
 @layer components {
   .project-info-container {
-  @apply  p-[.5rem] w-[50%] relative;
+  @apply   w-[50%] relative;
   }
 }
 
 @layer components {
   .project-title {
-  @apply  font-Rubik font-bold text-l-dk uppercase mb-[1rem];
+  @apply  font-Rubik font-bold text-project-title-dk uppercase mb-[.75rem];
+  }
+}
+@layer components {
+  .project-title-sub {
+    @apply font-Rubik font-bold
   }
 }
 
 @layer components {
   .project-details {
-  @apply font-Mulish text-center text-gray-500 mb-[2rem];
+  @apply font-Mulish  text-gray-500 mb-[1.5rem];
   }
 }
 @layer components {
-  .project-details-label {
-  @apply font-Mulish text-gray-500;
+  .project-details-features {
+  @apply font-Mulish  text-gray-500 mb-[1rem];
+  }
+}
+@layer components {
+  .project-tags {
+  @apply flex flex-wrap gap-[.25rem] mb-[2rem] items-center ;
+  }
+}
+@layer components {
+  .tag {
+  @apply  text-[.8rem] border rounded-lg bg-slate-200  px-[.2rem] py-[.1rem];
+  }
+}
+@layer components {
+  .project-tech-container {
+  @apply  flex gap-[1rem] items-center mb-[1.5rem];
   }
 }
 
+@layer components {
+  .project-details-label {
+  @apply font-Mulish text-gray-500 mr-[.5rem];
+  }
+}
+@layer components {
+  .project-skills-img {
+  @apply w-[35px];
+  }
+}
+
+
+/* contact */
+@layer components {
+  .contact-container {
+  @apply max-w-[80%] mx-auto px-[2rem] py-[3rem] border-2 bg-white  rounded mb-[5rem];
+  }
+}
+@layer components {
+  .contact-form-container {
+  @apply flex w-full h-[200px] gap-[3rem];
+  }
+}
+@layer components {
+  .contact-input {
+  @apply bg-bgOffWhite p-[.5rem] border rounded;
+  }
+}
+@layer components {
+  .contact-textarea {
+  @apply h-full p-[.5rem] border rounded bg-bgOffWhite;
+  }
+}
+@layer components {
+  .contact-error {
+  @apply absolute bottom-[-25px] right-[8px] text-[.75rem] text-red-500 font-bold;
+  }
+}
 
 .hero-img {
   border: 4px solid #292929;
@@ -72,14 +171,6 @@
 }
 }
 
-/* .hero-img-overlay {
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right:0;
-  bottom:0;
-} */
 
 .icon-link a svg:hover {
   color: #147efb;
