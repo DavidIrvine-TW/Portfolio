@@ -40,7 +40,7 @@ function Header({menu, setMenu}) {
                 to="portfolio"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={-120}
                 duration={400}
               >
                 Projects
@@ -52,7 +52,7 @@ function Header({menu, setMenu}) {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-40}
+                offset={-70}
                 duration={400}
               >
                 About
@@ -100,7 +100,7 @@ function Header({menu, setMenu}) {
                   to="portfolio"
                   spy={true}
                   smooth={true}
-                  offset={-40}
+                  offset={-120}
                   duration={400}
                   onClick={menuHandler}
                 >
@@ -113,7 +113,7 @@ function Header({menu, setMenu}) {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={-40}
+                  offset={-20}
                   duration={400}
                   onClick={menuHandler}
                 >
@@ -126,7 +126,7 @@ function Header({menu, setMenu}) {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={-40}
+                  offset={-20}
                   duration={400}
                   onClick={menuHandler}
                 >

@@ -35,7 +35,7 @@ const copyToClipboard = (text) => {
 
 const Projects = () => {
   return (
-    <section id="portfolio" className="page-width py-[7rem] px-[1.75rem] ">
+    <section id="portfolio" className="page-width min-h-screen px-[1.75rem] ">
 
       <div className="max-w-[1000px] mx-auto">
 
@@ -49,7 +49,7 @@ const Projects = () => {
             />
           </h3>
           <h4 className="section-subheading text-center tb900:text-left">
-            Each project is a unique piece of development
+            Featured projects
           </h4>
         </div>
 
@@ -304,6 +304,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <div className="w-[100px] h-[3px] bg-slate-200 my-[3rem] mx-auto"></div>
     </section>
   );
 };

@@ -99,6 +99,18 @@
   @apply hover:text-babyblue cursor-pointer font-Rubik font-bold text-l-dk transition-colors duration-200 ;
   }
 }
+/* about slider */
+@layer components {
+  .about-slide{
+  @apply hover:text-babyblue cursor-pointer font-Rubik font-bold text-l-dk transition-colors duration-200 ;
+  }
+}
+@layer components {
+  .about-slide-gif {
+  @apply hover:text-babyblue cursor-pointer font-Rubik font-bold text-l-dk transition-colors duration-200 ;
+  }
+}
+
 
 /* projects */
 @layer components {
@@ -180,7 +192,7 @@
 /* contact */
 @layer components {
   .contact-container {
-  @apply  mx-auto px-[1rem] tb900:px-[2rem] py-[2rem] border-2 bg-white  rounded max-w-[1100px] ;
+  @apply  mx-auto px-[1rem] tb900:px-[2rem] py-[2rem] border-2 bg-white  rounded max-w-[445px] tb900:max-w-[1000px] ;
   }
 }
 @layer components {
