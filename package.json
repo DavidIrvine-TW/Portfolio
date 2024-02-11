@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
     "email-js": "^2.0.2",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-emoji-render": "^2.0.1",
