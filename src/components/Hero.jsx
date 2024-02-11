@@ -18,11 +18,16 @@ function Hero() {
           <h2 className="text-center tb900:text-left text-mob-title font-Rubik font-bold tb500:text-title-dk flex flex-col text-header-txt my-[1.25rem] relative">
             Front-End React Developer
             <img
-              className="w-[45px] tb500:w-[60px] h-auto absolute bottom-0 right-[0%] tb900:right-[10%] "
+              className="hidden tb900:block w-[45px] tb500:w-[60px] h-auto absolute bottom-0 right-[0%] tb900:right-[10%] "
               src={waving}
               alt="waving hand"
             />
           </h2>
+          <img
+              className="mx-auto tb900:hidden w-[45px] h-auto tb500:w-[60px] mb-[1.25rem]"
+              src={waving}
+              alt="waving hand"
+            />
 
           <p className="text-center tb900:text-left body-text font-Mulish text-body-dk text-gray-500">
             Hi, I'm David Irvine. I'm a Web Developer based in the UK.
