@@ -86,7 +86,7 @@ const Projects = () => {
           </div>
 
           <div className="project-info-container">
-            <h4 className="project-title flex items-center justify-center tb900:justify-start gap-[1rem] mb">
+            <h4 className="project-title flex items-center justify-center tb900:justify-start gap-[1rem] ">
               {vapesterData.name}{" "}
               <img
                 src={OnlineShopping}
