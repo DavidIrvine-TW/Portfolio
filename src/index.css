@@ -13,18 +13,59 @@
 #root {
   position: relative;
   background-color: #FAF9F6;
+  min-height: 100vh;
+
+}
+
+
+
+/* BURGER MENU */
+
+.hamburger {
+  z-index: 100;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 24px;
+  cursor: pointer;
+
+}
+
+.hamburger-menu span {
+  width: 24px;
+  height: 3px;
+  background-color: #292929;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-menu.cross span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+  background-color: hsl(240, 6%, 54%);
+}
+
+.hamburger-menu.cross span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.cross span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: hsl(240, 6%, 54%);
 }
 
 
 /* section headings */
 @layer components {
   .section-heading {
-  @apply font-bold text-babyblue font-Mulish mb-[1rem] text-[1.25rem] tracking-[.5px];
+  @apply font-bold text-babyblue font-Mulish text-[1.25rem] tracking-[.5px];
   }
 }
 @layer components {
   .section-subheading {
-  @apply font-Rubik font-bold text-header-txt mb-[1.25rem] text-about-heading-dk ;
+  @apply font-Rubik font-bold text-header-txt text-about-heading-dk ;
   }
 }
 /* body-text */
@@ -37,7 +78,7 @@
 
 @layer components {
   .btn-primary {
-  @apply cursor-pointer items-center w-max px-[1rem] py-[.5rem] border font-bold rounded mt-[2rem] mb-[1rem] bg-babyblue text-white uppercase hover:bg-babybluelight hover:scale-105 tracking-[1px];
+  @apply transition duration-300 cursor-pointer items-center w-max px-[1rem] py-[.5rem] border font-bold rounded  bg-babyblue text-white uppercase hover:bg-babybluelight hover:scale-105 tracking-[1px];
   }
 }
 @layer components {
@@ -62,24 +103,34 @@
 /* projects */
 @layer components {
   .project-container {
-  @apply  flex gap-[3rem] mx-auto  mb-[5rem] border-2 p-[2rem]  rounded bg-white;
+  @apply  flex flex-col max-w-[445px] tb900:max-w-[1000px] mx-auto tb900:flex-row gap-[3rem] border-2 py-[2rem] px-[1rem] tb500:px-[2rem] tb500:py-[3rem] rounded bg-white;
+  }
+}
+@layer components {
+  .project-container-kanban {
+  @apply  flex flex-col max-w-[445px] tb900:max-w-[1000px] mx-auto tb900:flex-row-reverse gap-[3rem] border-2 py-[2rem] px-[1rem] tb500:px-[2rem] tb500:py-[3rem] rounded bg-white;
   }
 }
 @layer components {
   .swiper-container {
-  @apply  w-[50%] max-h-[400px] relative overflow-hidden rounded shadow-md;
+  @apply  w-full  h-auto relative overflow-hidden rounded shadow-md tb900:w-[50%];
+  }
+}
+@layer components {
+  .swiper-container-kanban {
+  @apply  w-full h-min relative overflow-hidden rounded shadow-md tb900:w-[50%];
   }
 }
 
 @layer components {
   .project-info-container {
-  @apply   w-[50%] relative;
+  @apply   flex flex-col gap-[1rem] relative tb900:w-[50%] ;
   }
 }
 
 @layer components {
   .project-title {
-  @apply  font-Rubik font-bold text-project-title-dk uppercase mb-[.75rem];
+  @apply  font-Rubik font-bold text-project-title-dk uppercase;
   }
 }
 @layer components {
@@ -90,7 +141,7 @@
 
 @layer components {
   .project-details {
-  @apply font-Mulish  text-gray-500 mb-[1.5rem];
+  @apply font-Mulish  text-gray-500 mb-[1.5rem] tb900:mb-4 text-center tb900:text-left;
   }
 }
 @layer components {
@@ -100,7 +151,7 @@
 }
 @layer components {
   .project-tags {
-  @apply flex flex-wrap gap-[.25rem] mb-[2rem] items-center ;
+  @apply flex flex-wrap gap-[.25rem] items-center justify-center tb900:justify-start;
   }
 }
 @layer components {
@@ -110,7 +161,7 @@
 }
 @layer components {
   .project-tech-container {
-  @apply  flex gap-[1rem] items-center mb-[1.5rem];
+  @apply  flex gap-[1rem] items-center justify-center tb900:justify-start mb-[1.5rem] tb900:mb-4  ;
   }
 }
 
@@ -129,22 +180,22 @@
 /* contact */
 @layer components {
   .contact-container {
-  @apply max-w-[80%] mx-auto px-[2rem] py-[3rem] border-2 bg-white  rounded mb-[5rem];
+  @apply  mx-auto px-[1rem] tb900:px-[2rem] py-[2rem] border-2 bg-white  rounded max-w-[1100px] ;
   }
 }
 @layer components {
   .contact-form-container {
-  @apply flex w-full h-[200px] gap-[3rem];
+  @apply flex flex-col tb900:flex-row w-full gap-[2rem] mb-[2rem];
   }
 }
 @layer components {
   .contact-input {
-  @apply bg-bgOffWhite p-[.5rem] border rounded;
+  @apply bg-bgOffWhite p-[.5rem] border-2 rounded ;
   }
 }
 @layer components {
   .contact-textarea {
-  @apply h-full p-[.5rem] border rounded bg-bgOffWhite;
+  @apply min-h-[200px] p-[.5rem] border-2 rounded bg-bgOffWhite ;
   }
 }
 @layer components {

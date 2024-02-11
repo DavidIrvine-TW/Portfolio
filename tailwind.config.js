@@ -47,6 +47,16 @@ export default {
           letterSpacing: '0px',
           fontWeight: '700'
         }],
+
+        'mob-title' : ['2.5rem', {
+          lineHeight: '3rem',
+          letterSpacing: '0px',
+          fontWeight: '700',
+        }],
+
+
+
+
       },
       fontFamily: {
         Roboto: ['Roboto', 'sans-serif'],
@@ -55,7 +65,8 @@ export default {
       },
       screens: {
         mob: '375px',
-        tb: '768px',
+        tb500 : '500px',
+        tb900: '900px',
         dk: '1440px'
       },
       borderWidth: {

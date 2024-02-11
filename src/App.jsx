@@ -1,31 +1,29 @@
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import About from "./components/About"
-import Footer from "./components/Footer"
-import Projects from "./components/Projects"
-import Contact from './components/Contact'
-
-
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import { useState } from "react";
 
 function App() {
+  const [menu, setMenu] = useState(false);
 
+  const wrapperClass = menu ? "overflow-hidden" : "min-h-screen";
 
   return (
-    <>
-      <Header/>
-      <main className="  ">
-        <Hero/>
-        <About/>
-        <Projects/>
-        <Contact/>
-    
+    <div id="wrapper" className={`${wrapperClass} bg-bgOffWhite`}>
+      <Header menu={menu} setMenu={setMenu} />
+
+      <main className="w-full bg-bgOffWhite">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
       </main>
-      <Footer/>
-      
-    
-   
-    </>
-  )
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

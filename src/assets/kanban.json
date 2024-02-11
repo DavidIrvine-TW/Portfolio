@@ -1,5 +1,5 @@
 {
-    "name" : "Kanban Task Manager",
+    "name" : "Kanban ",
     "blurb" : "An agile project management app designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow). Firebase for authentiation, data storage and retrieval. React Redux for state management. ReactDnD handles task drag and drop.",
     "tech" : ["react", "firebase", "tailwind", "redux", "figma"],
     "features" : "",

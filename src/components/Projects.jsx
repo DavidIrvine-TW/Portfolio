@@ -1,15 +1,15 @@
 import React from "react";
 import trailerview from "../assets/trailerview.jpg";
 import kanban from "../assets/kanban.jpg";
+import kanbanDark from "../assets/kanban-dark.png";
 import vapestore from "../assets/vapestore.jpg";
 import shopify from "../assets/icon-shopify.svg";
 import iconLink from "../assets/icon-link.svg";
-import IconGitHub from "../icons/IconGitHub";
 import Iconghub from "../icons/Iconghub";
-import Briefcase from '../assets/briefcase.png'
-import OnlineShopping from '../assets/online-shopping.png'
-import Task from '../assets/task.png'
-import Video from '../assets/video.png'
+import Briefcase from "../assets/briefcase.png";
+import OnlineShopping from "../assets/online-shopping.png";
+import Task from "../assets/task.png";
+import Video from "../assets/video.png";
 
 import vapesterData from "../assets/vapester.json";
 import kanbanData from "../assets/kanban.json";
@@ -35,23 +35,34 @@ const copyToClipboard = (text) => {
 
 const Projects = () => {
   return (
-    <section id="portfolio" className="page-width pb-[5rem] flex">
-      <div className="max-w-[80%] mx-auto ">
-        <div className="mb-[3rem]">
-          <h3 className="section-heading flex gap-[1rem]">PORTFOLIO <img src={Briefcase} alt="briefcase icon" className="w-[30px] h-[30px]"/></h3>
-          <h4 className="section-subheading">
+    <section id="portfolio" className="page-width py-[7rem] px-[1.75rem] ">
+
+      <div className="max-w-[1000px] mx-auto">
+
+        <div className="mb-[3rem] flex flex-col gap-[1rem]">
+          <h3 className="section-heading flex items-center justify-center tb900:justify-start gap-[1rem]">
+            PORTFOLIO
+            <img
+              src={Briefcase}
+              alt="briefcase icon"
+              className="w-[30px] h-[30px]"
+            />
+          </h3>
+          <h4 className="section-subheading text-center tb900:text-left">
             Each project is a unique piece of development
           </h4>
         </div>
 
         {/* vapestore */}
-        <div className="project-container">
-          <div className="swiper-container border-2">
+        <div className="project-container mb-[5rem]">
+          <div className="swiper-container border-1">
             <Swiper
-              className="vapeSwiper w-full h-full"
-              pagination={{
-                // type: "fraction",
-              }}
+              className="w-full h-full"
+              pagination={
+                {
+                  // type: "fraction",
+                }
+              }
               modules={[Navigation, Pagination]}
               spaceBetween={16}
               navigation={false}
@@ -75,7 +86,14 @@ const Projects = () => {
           </div>
 
           <div className="project-info-container">
-            <h4 className="project-title flex items-center gap-[1rem]">{vapesterData.name} <img src={OnlineShopping} alt="shopping icon" className="w-[30px] h-[30px]"/></h4>
+            <h4 className="project-title flex items-center justify-center tb900:justify-start gap-[1rem] mb">
+              {vapesterData.name}{" "}
+              <img
+                src={OnlineShopping}
+                alt="shopping icon"
+                className="w-[30px] h-[30px]"
+              />
+            </h4>
 
             <p className="project-details">{vapesterData.blurb}</p>
 
@@ -104,7 +122,7 @@ const Projects = () => {
             </div>
 
             <div className="project-links-container mt-[1.5rem]">
-              <p className="flex gap-[.5rem] text-gray-500 text-[.8rem]">
+              <p className="flex items-center justify-center tb900:justify-start gap-[.5rem] text-gray-500 text-[.8rem]">
                 *Password:
                 <span
                   className="cursor-pointer border hover:border-header-txt rounded px-[.5rem] hover:bg-slate-200 text-header-txt font-bold"
@@ -114,7 +132,7 @@ const Projects = () => {
                 </span>
               </p>
 
-              <div className="flex gap-[1rem] mt-[1.5rem]">
+              <div className="flex items-center justify-center tb900:justify-start gap-[1rem] mt-[2rem]">
                 <a
                   href={vapesterData.github}
                   target="_blank"
@@ -128,7 +146,7 @@ const Projects = () => {
                   href={vapesterData.livelink}
                   target="_blank"
                 >
-                  Live Demo
+                  Live
                   <img src={iconLink} alt="icon link" />
                 </a>
               </div>
@@ -137,12 +155,43 @@ const Projects = () => {
         </div>
 
         {/* Kanban */}
-        <div className="project-container">
+        <div className="project-container-kanban mb-[5rem]">
+          <div className="swiper-container-kanban ">
+            <Swiper
+              className="kanbanSwiper w-full h-full border-1"
+              pagination={
+                {
+                  // type: "fraction",
+                }
+              }
+              modules={[Navigation, Pagination]}
+              spaceBetween={16}
+              navigation={false}
+              slidesPerView={1}
+            >
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={kanban}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={kanbanDark}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
           <div className="project-info-container ">
-            <p className="project-title flex items-center gap-[1rem]">{kanbanData.name} <img src={Task} alt="task icon" className="w-[30px] h-[30px]"/></p>
+            <p className="project-title flex items-center justify-center tb900:justify-start gap-[1rem]">
+              {kanbanData.name}
+              <img src={Task} alt="task icon" className="w-[30px] h-[30px]" />
+            </p>
 
             <p className="project-details">{kanbanData.blurb}</p>
-            <p className="project-details-features">{kanbanData.features}</p>
 
             <div className="project-tech-container">
               {kanbanData.tech.map((tech, index) => {
@@ -168,7 +217,7 @@ const Projects = () => {
             </div>
 
             <div className="project-links-container">
-              <div className="flex gap-[1rem] mt-[1.5rem]">
+              <div className="flex items-center justify-center tb900:justify-start gap-[1rem] mt-[1.5rem]">
                 <a
                   href={kanbanData.github}
                   target="_blank"
@@ -182,48 +231,18 @@ const Projects = () => {
                   href={kanbanData.livelink}
                   target="_blank"
                 >
-                  Live Demo
+                  Live
                   <img src={iconLink} alt="icon link" />
                 </a>
               </div>
             </div>
           </div>
-
-          <div className="swiper-container ">
-            <Swiper
-              className="kanbanSwiper w-full h-full border-2"
-              pagination={{
-                // type: "fraction",
-              }}
-              modules={[Navigation, Pagination]}
-              spaceBetween={16}
-              navigation={false}
-              slidesPerView={1}
-            >
-              <SwiperSlide>
-                <img
-                  className="object-cover "
-                  src={kanban}
-                  alt="porfolio image"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="object-cover "
-                  src={kanban}
-                  alt="porfolio image"
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
         </div>
-
-        {/* <hr className="my-[2rem]"></hr> */}
 
         {/* trailerview */}
 
         <div className="project-container">
-          <div className="swiper-container border-2 shadow-md">
+          <div className="swiper-container border-1 shadow-md">
             <img
               className="object-cover "
               src={trailerview}
@@ -231,8 +250,11 @@ const Projects = () => {
             />
           </div>
 
-          <div className="w-[50%] relative ">
-            <p className="project-title items-center gap-[1rem] flex">{trailerviewData.name} <img src={Video} alt="video icon" className="w-[30px] h-[30px]"/></p>
+          <div className=" project-info-container ">
+            <p className="project-title items-center justify-center tb900:justify-start gap-[1rem] flex">
+              {trailerviewData.name}{" "}
+              <img src={Video} alt="video icon" className="w-[30px] h-[30px]" />
+            </p>
 
             <p className="project-details">{trailerviewData.blurb}</p>
 
@@ -250,7 +272,6 @@ const Projects = () => {
             </div>
 
             <div className="project-tags">
-              {/* <p className="project-details-label">Tags:</p>  */}
               {trailerviewData.tags.map((tag, index) => {
                 return (
                   <span className="tag" key={index}>
@@ -261,7 +282,7 @@ const Projects = () => {
             </div>
 
             <div className="project-links-container">
-              <div className="flex gap-[1rem] mt-[1.5rem]">
+              <div className="flex items-center justify-center tb900:justify-start gap-[1rem] mt-[1.5rem]">
                 <a
                   href={trailerviewData.github}
                   target="_blank"
@@ -275,7 +296,7 @@ const Projects = () => {
                   href={trailerviewData.livelink}
                   target="_blank"
                 >
-                  Live Demo
+                  Live
                   <img src={iconLink} alt="icon link" />
                 </a>
               </div>

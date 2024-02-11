@@ -5,14 +5,12 @@ import IconLinkedIn from "../icons/IconLinkedIn";
 const Footer = () => {
   return (
     <footer className="shadow-md bg-header-txt  w-full">
-      <div className="page-width flex justify-around items-center px-4 py-6 text-xl-dk">
+      <div className="page-width flex flex-col tb900:flex-row justify-around items-center px-4 py-6 gap-[2rem] text-xl-dk">
 
         <div className="font-Rubik font-bold text-white">
-          <span>Marv.Dev</span>
+          <span>marv-dev</span>
         </div>
-        <div>
-          <span className="text-[.75rem] text-white">Copyright © 2024.Marv.Dev</span>
-        </div>
+        
       
           <ul className="flex gap-6 font-Rubik">
             <li className="text-white hover:text-babyblue">
@@ -29,6 +27,10 @@ const Footer = () => {
               </a>
             </li>
           </ul>
+
+          <div>
+            <span className="text-[.75rem] text-white">Copyright © 2024</span>
+          </div>
        
       </div>
     </footer>
