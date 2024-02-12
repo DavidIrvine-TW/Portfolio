@@ -125,7 +125,7 @@
 }
 @layer components {
   .swiper-container {
-  @apply  w-full max-h-[450px] h-auto relative overflow-hidden rounded shadow-md tb900:w-[50%];
+  @apply  w-full max-h-[296px] tb900:max-h-[450px] h-auto relative overflow-hidden rounded shadow-md tb900:w-[50%];
   }
 }
 @layer components {
