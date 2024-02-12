@@ -41,11 +41,12 @@ function Hero() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-120}
+            offset={-40}
             duration={400}
           >
             Connect
           </Link>
+          
           <div className="icon-link flex gap-4 cursor-pointer mx-auto tb900:mx-0">
             <a href="https://github.com/DavidIrvine-TW" target="_blank">
               <IconGitHub />

@@ -88,7 +88,7 @@
 }
 @layer components {
   .btn-secondary {
-  @apply flex items-center gap-[.5rem] border bg-header-txt text-white hover:border-header-txt py-[.25rem] px-[.75rem] rounded hover:bg-slate-200;
+  @apply flex items-center gap-[.5rem] border bg-header-txt text-white h-[35px] py-[.25rem] px-[.75rem] rounded hover:border-babyblue hover:bg-babyblue transition duration-200;
   }
 }
 
@@ -125,7 +125,7 @@
 }
 @layer components {
   .swiper-container {
-  @apply  w-full  h-auto relative overflow-hidden rounded shadow-md tb900:w-[50%];
+  @apply  w-full max-h-[450px] h-auto relative overflow-hidden rounded shadow-md tb900:w-[50%];
   }
 }
 @layer components {

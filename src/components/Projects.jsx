@@ -1,8 +1,16 @@
 import React from "react";
 import trailerview from "../assets/trailerview.jpg";
+import trailerviewOne from "../assets/trailerviewOne.jpg";
+import trailerviewTwo from "../assets/trailerviewTwo.jpg";
+import trailerviewThree from "../assets/trailerviewThree.jpg"
 import kanban from "../assets/kanban.jpg";
 import kanbanDark from "../assets/kanban-dark.png";
 import vapestore from "../assets/vapestore.jpg";
+import vapesterAbout from "../assets/vapesterAbout.jpg"
+import vapesterContact from "../assets/vapesterContact.jpg"
+import vapesterCollection from "../assets/vapesterCollection.jpg"
+import vapesterProduct from "../assets/vapesterProduct.jpg"
+import vapesterCart from "../assets/vapesterCart.jpg"
 import shopify from "../assets/icon-shopify.svg";
 import iconLink from "../assets/icon-link.svg";
 import Iconghub from "../icons/Iconghub";
@@ -57,7 +65,7 @@ const Projects = () => {
         <div className="project-container mb-[5rem]">
           <div className="swiper-container border-1">
             <Swiper
-              className="w-full h-full"
+              className="w-full h-full "
               pagination={
                 {
                   // type: "fraction",
@@ -78,7 +86,35 @@ const Projects = () => {
               <SwiperSlide>
                 <img
                   className="object-cover cursor-grab"
-                  src={vapestore}
+                  src={vapesterAbout}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={vapesterCollection}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={vapesterProduct}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={vapesterContact}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={vapesterCart}
                   alt="porfolio image"
                 />
               </SwiperSlide>
@@ -242,12 +278,49 @@ const Projects = () => {
         {/* trailerview */}
 
         <div className="project-container">
-          <div className="swiper-container border-1 shadow-md">
-            <img
-              className="object-cover "
-              src={trailerview}
-              alt="porfolio image"
-            />
+        <div className="swiper-container border-1">
+            <Swiper
+              className="w-full h-full "
+              pagination={
+                {
+                  // type: "fraction",
+                }
+              }
+              modules={[Navigation, Pagination]}
+              spaceBetween={16}
+              navigation={false}
+              slidesPerView={1}
+            >
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={trailerview}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={trailerviewThree}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={trailerviewOne}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="object-cover cursor-grab"
+                  src={trailerviewTwo}
+                  alt="porfolio image"
+                />
+              </SwiperSlide>
+              
+            </Swiper>
           </div>
 
           <div className=" project-info-container ">
