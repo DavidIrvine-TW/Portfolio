@@ -305,21 +305,6 @@ const Projects = () => {
                   alt="porfolio image"
                 />
               </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="object-cover cursor-grab"
-                  src={trailerviewOne}
-                  alt="porfolio image"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="object-cover cursor-grab"
-                  src={trailerviewTwo}
-                  alt="porfolio image"
-                />
-              </SwiperSlide>
-              
             </Swiper>
           </div>
 
