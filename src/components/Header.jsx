@@ -52,7 +52,7 @@ function Header({menu, setMenu}) {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-150}
                 duration={400}
               >
                 About
@@ -64,7 +64,7 @@ function Header({menu, setMenu}) {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={-10}
                 duration={400}
               >
                 Contact
@@ -126,7 +126,7 @@ function Header({menu, setMenu}) {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={-20}
+                  offset={-70}
                   duration={400}
                   onClick={menuHandler}
                 >

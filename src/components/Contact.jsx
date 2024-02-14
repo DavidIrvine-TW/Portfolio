@@ -80,11 +80,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="page-width py-[7rem] px-[1.75rem] ">
+    <section id="contact" className="page-width pb-[7rem] px-[1.75rem] ">
 
       <div className="contact-container">
 
-        <div className="flex flex-col tb900:flex-row tb900:gap-[3rem]">
+        <div className="flex flex-col tb900:flex-row tb900:gap-[3rem] items-center">
 
           <div className="flex flex-col items-center tb900:items-start gap-[1rem] mb-[3rem] tb900:w-[50%]">
             <h3 className="section-heading flex items-center gap-[1rem]  ">
@@ -102,7 +102,7 @@ const Contact = () => {
 
           <div className="flex flex-col gap-[1rem] mb-[3rem] tb900:flex-start tb900:w-[50%] tb900:gap-[2rem]" >
 
-            <div className="flex flex-col items-center justify-center gap-[1rem] tb900:flex-row tb900:justify-start ">
+            {/* <div className="flex flex-col items-center justify-center gap-[1rem] tb900:flex-row tb900:justify-start ">
               <IconLocation />
               <div className="flex flex-col items-center justify-center gap-[rem]  tb900:items-start">
                 <span className="font-Rubik font-bold text-header-txt text-[1.1rem]">
@@ -112,7 +112,7 @@ const Contact = () => {
                   Glasgow, Scotland
                 </span>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex flex-col  items-center justify-center gap-[1rem] tb900:flex-row  tb900:justify-start">
               <IconEmailAlt />
@@ -139,7 +139,7 @@ const Contact = () => {
 
           <div className="contact-form-container ">
 
-            <div className="flex flex-col gap-[2rem] tb900:w-[50%]">
+            <div className="flex flex-col gap-[2rem] tb900:gap-[3rem] tb900:w-[50%]">
               <div className="flex flex-col relative ">
                 {/* <label>Name</label> */}
                 <input

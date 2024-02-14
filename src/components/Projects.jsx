@@ -62,7 +62,7 @@ const Projects = () => {
         </div>
 
         {/* vapestore */}
-        <div className="project-container mb-[5rem]">
+        <div className="project-container mb-[4rem]">
           <div className="swiper-container border-1">
             <Swiper
               className="w-full h-full "
@@ -191,7 +191,7 @@ const Projects = () => {
         </div>
 
         {/* Kanban */}
-        <div className="project-container-kanban mb-[5rem]">
+        <div className="project-container-kanban mb-[4rem]">
           <div className="swiper-container-kanban ">
             <Swiper
               className="kanbanSwiper w-full h-full border-1"
@@ -362,7 +362,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="w-[100px] h-[3px] bg-slate-200 my-[3rem] mx-auto"></div>
+      <div className="w-[100px] h-[3px] bg-slate-200 my-[4rem] mx-auto"></div>
     </section>
   );
 };
