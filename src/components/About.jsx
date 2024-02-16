@@ -58,14 +58,14 @@ function About() {
             <SwiperSlide className="w-full h-full cursor-grab overflow-hidden">
               <img
               className="h-full w-full rounded-lg"
-              src={synth}
+              src={giphy}
               alt="code gif"
             />
             </SwiperSlide>
             <SwiperSlide className="w-full h-full cursor-grab">
               <img
               className="h-full w-full rounded-lg"
-              src={giphy}   
+              src={synth}   
               alt="code gif"
             />
             </SwiperSlide>

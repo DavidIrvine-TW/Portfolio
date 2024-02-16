@@ -1,8 +1,30 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio built with React + Vite
 
-Currently, two official plugins are available:
+I opted for a very simple and clean design, it's not flashy, at all!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The skills icons are from [SkillIconsDev](https://skillicons.dev/).
+
+The contact section is powered by [EmailJS](https://www.emailjs.com/).
+
+## Portfolio Sections 📚
+
+✔️ About me\
+✔️ Projects\
+✔️ Hero/Home\
+✔️ Contact
+
+### Desktop Hero (max-width: 1400px)
+![Desktop Homepage](./src/assets/marv-dev-dk.png)
+
+### Projets section 
+![Desktop Projects](./src/assets/marv-dev-projects.png)
+
+### Contact 
+![Desktop Contact](./src/assets/marv-dev-contact.png)
+
+### Mobile Hero (min-width: 375px)
+![Mobile Homepage](./src/assets/marv-dev-mb.png)
+
+### Mobile Menu 
+![DMobile Menu](./src/assets/marv-dev-mb-menu.png)

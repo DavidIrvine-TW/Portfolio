@@ -257,7 +257,7 @@ const Projects = () => {
                 <a
                   href={kanbanData.github}
                   target="_blank"
-                  className="btn-secondary "
+                  className="btn-secondary"
                 >
                   Code <Iconghub />{" "}
                 </a>
@@ -291,7 +291,7 @@ const Projects = () => {
               navigation={false}
               slidesPerView={1}
             >
-              <SwiperSlide>
+              <SwiperSlide className="h-auto w-full">
                 <img
                   className="object-cover cursor-grab"
                   src={trailerview}
