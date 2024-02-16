@@ -19,17 +19,22 @@ The contact section is powered by [EmailJS](https://www.emailjs.com/).
 
 
 ### Desktop Hero 
-<img src="./src/assets/marv-dev-dk.png" alt="portfolio hero desktop" style="width: auto; max-width: 100%;">
-
+<div style="border: 2px solid gray">
+<img src="./src/assets/marv-dev-dk.png" alt="portfolio hero desktop" style="width: auto; max-width: 100%; display: block;">
+</div>
 
 ### Projects Section 
-<img src="./src/assets/marv-dev-projects.png" alt="portfolio hero desktop" style="width: auto; max-width: 100%;">
+<div style="border: 2px solid gray">
+<img src="./src/assets/marv-dev-projects.png" alt="portfolio hero desktop" style="width: auto; max-width: 100%; display: block;"></div>
 
 ### Contact Section
-<img src="./src/assets/marv-dev-contact.png" alt="portfolio contact desktop" style="width: auto; max-width: 100%;">
+<div style="border: 2px solid gray">
+<img src="./src/assets/marv-dev-contact.png" alt="portfolio contact desktop" style="width: auto; max-width: 100%; display: block;"></div>
 
 ### Mobile Hero
-<img src="./src/assets/marv-dev-mb.png" alt="portfolio hero mobile" style="width: 375px; max-width: 100%;">
+<div style="border: 2px solid gray; width: 375px;">
+<img src="./src/assets/marv-dev-mb.png" alt="portfolio hero mobile" style="width: 375px; max-width: 100%; display: block;"></div>
 
 ### Mobile Menu 
-<img src="./src/assets/marv-dev-mb-menu.png" alt="portfolio menu mobile" style="width: 375px; max-width: 100%;">
+<div style="border: 2px solid gray; width: 375px;">
+<img src="./src/assets/marv-dev-mb-menu.png" alt="portfolio menu mobile" style="width: 375px; max-width: 100%; display: block;"></div>
