@@ -14,17 +14,18 @@ The contact section is powered by [EmailJS](https://www.emailjs.com/).
 ✔️ Hero/Home\
 ✔️ Contact
 
-### Desktop Hero (max-width: 1400px)
-![Desktop Homepage](./src/assets/marv-dev-dk.png)
+### Desktop Hero 
+<img src="./src/assets/marv-dev-dk.png" alt="portfolio hero desktop" style="width: auto; max-width: 100%;">
 
-### Projets section 
-![Desktop Projects](./src/assets/marv-dev-projects.png)
 
-### Contact 
-![Desktop Contact](./src/assets/marv-dev-contact.png)
+### Projects Section 
+<img src="./src/assets/marv-dev-projects.png" alt="portfolio hero desktop" style="width: auto; max-width: 100%;">
 
-### Mobile Hero (min-width: 375px)
-![Mobile Homepage](./src/assets/marv-dev-mb.png)
+### Contact Section
+<img src="./src/assets/marv-dev-contact.png" alt="portfolio contact desktop" style="width: auto; max-width: 100%;">
+
+### Mobile Hero
+<img src="./src/assets/marv-dev-mb.png" alt="portfolio hero mobile" style="width: 375px; max-width: 100%;">
 
 ### Mobile Menu 
-![DMobile Menu](./src/assets/marv-dev-mb-menu.png)
+<img src="./src/assets/marv-dev-mb-menu.png" alt="portfolio menu mobile" style="width: 375px; max-width: 100%;">
