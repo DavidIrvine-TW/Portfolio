@@ -7,12 +7,16 @@ The skills icons are from [SkillIconsDev](https://skillicons.dev/).
 
 The contact section is powered by [EmailJS](https://www.emailjs.com/).
 
+
+
 ## Portfolio Sections 📚
 
 ✔️ About me\
 ✔️ Projects\
 ✔️ Hero/Home\
 ✔️ Contact
+
+
 
 ### Desktop Hero 
 <img src="./src/assets/marv-dev-dk.png" alt="portfolio hero desktop" style="width: auto; max-width: 100%;">
