@@ -97,11 +97,11 @@ function About() {
             developing from a firm vision.
             <br />
             <br />
-            My frameworks of choice are React/Next.js in combination with
+            My frameworks of choice are React and Next.js in combination with
             Tailwind CSS. For e-commerce builds I use the Shopify CMS.
           </p>
           <button onClick={openResume} className="btn-primary mt-[2rem] tb900:mt-[1rem] mx-auto tb900:mx-0 w-max tb900:w-full">
-            my Resume
+            my CV/Resume
           </button>
         </div>
       </div>
