@@ -1,7 +1,7 @@
 [{
     "id" : "project-photosnap",
     "name" : "Photosnap",
-    "nameIcon" :"./public/assets/photographer.png",
+    "nameIcon" :"./assets/photographer.png",
     "nameIconAlt" : "photographer icon",
     "blurb" : "A multipage photo-sharing website/blog. This project was built from a Figma design with React and styled using Tailwind CSS. The build is handled by Vite and deployed on GH-Pages.",
     "tech" : ["react", "tailwind", "figma", "vite"],
@@ -9,7 +9,7 @@
     "livelink" : "https://davidirvine-tw.github.io/photosnap-website/",
     "github" : "https://github.com/DavidIrvine-TW/photosnap-website",
     "tags" : ["#blog", "#redux", "#npm", "#react", "#tailwind", "#figma", "#css-grid", "#website", "#vite"],
-    "images": ["./public/assets/photosnapOne.jpg","./public/assets/photosnapTwo.jpg","./public/assets/photosnapThree.jpg"],
+    "images": ["./assets/photosnapOne.jpg","./assets/photosnapTwo.jpg","./assets/photosnapThree.jpg"],
     "align" : "right"
 
 }]
