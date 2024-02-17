@@ -38,11 +38,11 @@ function About() {
       <div className="max-w-[1000px] mx-auto">
 
    
-      <div className="mx-auto flex flex-col px-4 tb900:flex-row tb900:gap-[2rem]  items-center justify-center bg-white border-2 rounded py-[4rem]">
+      <div className="mx-auto flex flex-col px-4 tb900:flex-row tb900:gap-[3rem]  items-center justify-center bg-white border-2 rounded py-[4rem]">
         <div className="max-w-[350px] px-4 mb-[3rem] tb900:mb-0 tb500:w-[410px] tb900:w-[50%]">
           
       
-          <Swiper className="w-[250px] h-[225px] overflow-hidden tb900:w-[300px] tb900:h-[300px] border-2  rounded-lg shadow-md" pagination={
+          <Swiper className="w-[250px] h-[225px] overflow-hidden tb900:w-[340px] tb900:h-[340px] border-2  rounded-lg shadow-md" pagination={
                 {
                   // type: "fraction",
                 }
@@ -80,10 +80,10 @@ function About() {
             />
             </SwiperSlide>
           </Swiper>
-          <p className="text-center mt-[1rem] text-gray-500 text-[.8rem] font-Rubik uppercase font-bold">It's said a picture is worth a 1000 words!</p>
+          <p className="text-center mt-[1rem] text-gray-500 text-[.8rem] font-Rubik uppercase font-bold">Is a picture worth a 1000 words?</p>
         </div>
 
-        <div className="text-center tb900:text-left flex flex-col gap-[1rem] h-full tb500:max-w-[410px] px-[1rem] tb900:max-w-[50%]">
+        <div className="text-center tb900:text-left flex flex-col gap-[1rem] h-full tb500:max-w-[410px] px-[1rem] tb900:max-w-[40%]">
           <h3 className="section-heading flex justify-center tb900:justify-start gap-[1rem]  items-center">
             ABOUT ME{" "}
             <img src={Me} alt="about icon" className="w-[30px] h-[30px]" />

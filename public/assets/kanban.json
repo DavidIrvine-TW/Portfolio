@@ -1,7 +1,7 @@
 [{
     "id" : "project-kanban",
     "name" : "Kanban",
-    "nameIcon" :"public/assets/task.png",
+    "nameIcon" :"./assets/task.png",
     "nameIconAlt" : "task icon",
     "blurb" : "An agile project management app designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow). Firebase for authentiation, data storage and retrieval. React Redux for state management. ReactDnD handles task drag and drop.",
     "tech" : ["react", "firebase", "tailwind", "redux", "figma", "vite"],
@@ -9,6 +9,6 @@
     "livelink" : "https://davidirvine-tw.github.io/tsk_mngr_app/",
     "github" : "https://github.com/DavidIrvine-TW/tsk_mngr_app",
     "tags" : ["#app", "#redux", "#firebaseauth", "#fullstack", "#reactdnd", "#npm", "#react", "#firebase", "#tailwind", "#figma", "#redux"],
-    "images": ["public/assets/kanban.png"],
+    "images": ["./assets/kanban.png"],
     "align" : "right"
 }]
