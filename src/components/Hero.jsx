@@ -1,10 +1,10 @@
 import React from "react";
 import IconGitHub from "../icons/IconGitHub";
 import IconLinkedIn from "../icons/IconLinkedIn";
-import HeroImgGray from "../assets/HeroImgGray.jpg";
-import HeroSkillsData from "../assets/heroSkillsData.json";
-import portfolioHeroImageGray from "../assets/portfolioHeroImageGray.jpg";
-import waving from "../assets/waving.png";
+import HeroImgGray from "../../public/assets/HeroImgGray.jpg";
+import HeroSkillsData from "../../public/assets/heroSkillsData.json";
+import portfolioHeroImageGray from "../../public/assets/portfolioHeroImageGray.jpg";
+import waving from "../../public/assets/waving.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function Hero() {

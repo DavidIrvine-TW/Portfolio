@@ -72,7 +72,7 @@ function Header({menu, setMenu}) {
             </li>
           </ul>
 
-          <div class={` tb900:hidden hamburger-menu ${isOpen}`} onClick={menuHandler}>
+          <div className={` tb900:hidden hamburger-menu ${isOpen}`} onClick={menuHandler}>
             <span></span>
             <span></span>
             <span></span>

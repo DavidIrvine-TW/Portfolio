@@ -15,7 +15,7 @@ function App() {
     <div id="wrapper" className={`${wrapperClass} bg-bgOffWhite`}>
       <Header menu={menu} setMenu={setMenu} />
 
-      <main className="w-full bg-bgOffWhite">
+      <main className="w-full">
         <Hero />
         <About />
         <Projects />

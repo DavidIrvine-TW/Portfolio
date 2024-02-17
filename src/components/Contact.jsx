@@ -1,16 +1,24 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import IconEmail from "../icons/iconEmail";
-import Point from "../assets/point.png";
+import Point from "../../public/assets/point.png";
 import IconLocation from "../icons/IconLocation";
 import IconEmailAlt from "../icons/IconEmailAlt";
 
 const Contact = () => {
   const form = useRef();
+  
+  // emailjs errormsg
   const [message, setMessage] = useState("");
   const [userNameErrorMsg, setUserNameErrorMsg] = useState("");
   const [userEmailErrorMsg, setUserEmailErrorMsg] = useState("");
   const [userMessageErrorMsg, setUserMessageErrorMsg] = useState("");
+
+  // emailjs
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICEID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATEID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLICKEY;
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -39,10 +47,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_sfe4lok",
-        "template_2k64qci",
+        serviceId,
+        templateId,
         form.current,
-        "dXv-sln1zBsnGA9Bl"
+        publicKey
       )
       .then(
         (result) => {

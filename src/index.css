@@ -88,7 +88,7 @@
 }
 @layer components {
   .btn-secondary {
-  @apply flex items-center gap-[.5rem] border bg-header-txt text-white h-[35px] py-[.25rem] px-[.75rem] rounded hover:border-babyblue hover:bg-babyblue transition duration-200;
+  @apply flex items-center gap-[.5rem] border bg-header-txt text-white h-[35px] py-[.25rem] px-[1.25rem] rounded hover:border-babyblue hover:bg-babyblue transition duration-200;
   }
 }
 
@@ -118,6 +118,7 @@
   font-weight: bold;
   font-size: .8rem;
   position: absolute;
+  bottom: 0%;
   transition: all .2s ease;
   display: flex;
   align-items: center;
@@ -125,7 +126,7 @@
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  /* border: 1px solid white; */
+  border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -150,7 +151,12 @@
 }
 @layer components {
   .swiper-container {
-  @apply  bg-bgOffWhite w-full max-h-[296px] tb900:max-h-[450px] h-auto relative overflow-hidden rounded shadow-md tb900:w-[50%];
+  @apply  w-full h-min max-h-[452px] overflow-hidden rounded shadow-md tb900:w-[50%];
+  }
+}
+@layer components {
+  .swiper-slide {
+  @apply  relative  w-full h-min max-h-[452px] ;
   }
 }
 @layer components {

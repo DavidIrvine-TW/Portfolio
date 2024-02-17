@@ -1,15 +1,11 @@
 import React from "react";
-import giphy from "../assets/giphy.gif";
-import dj from "../assets/dj.gif"
-import punk from "../assets/punk.gif"
-import study from "../assets/study.gif"
-import disco from "../assets/disco.gif"
-import beats from "../assets/beats.gif"
-import biff from "../assets/biff.gif"
-import synth from "../assets/synth.gif"
+import giphy from "../../public/assets/giphy.gif";
+import dj from "../../public/assets/dj.gif"
+import study from "../../public/assets/study.gif"
+import synth from "../../public/assets/synth.gif"
 import IconAbout from "../icons/iconAbout";
-import Me from "../assets/social-media.png";
-import MyResume from "../assets/David_Irvine_Resume_WebDev_Feb_2024.pdf"
+import Me from "../../public/assets/social-media.png";
+import MyResume from "../../public/assets/David_Irvine_Resume_WebDev_Feb_2024.pdf"
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -58,14 +54,14 @@ function About() {
             <SwiperSlide className="w-full h-full cursor-grab overflow-hidden">
               <img
               className="h-full w-full rounded-lg"
-              src={giphy}
+              src={synth}
               alt="code gif"
             />
             </SwiperSlide>
             <SwiperSlide className="w-full h-full cursor-grab">
               <img
               className="h-full w-full rounded-lg"
-              src={synth}   
+              src={giphy}   
               alt="code gif"
             />
             </SwiperSlide>

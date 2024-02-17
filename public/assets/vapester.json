@@ -1,0 +1,13 @@
+[{
+    "id" : "project-vapester",
+    "name": "Vapester",
+    "nameIcon": "public/assets/online-shopping.png",
+    "nameIconAlt": "online shopping icon",
+    "tech": ["html", "css", "js"],
+    "blurb": "A from scratch custom Shopify 2.0 storefront template. The Vapester storefront is a complete e-commerce solution. This multipage site includes product collections, search, filtering, cart and checkout pages. All store data is held and managed by the Shopify CMS.",
+    "tags": ["#e-commerce", "#html", "#css", "#javascript", "#shopify", "#liquid", "#template", "#ajax", "#leafletjs", "#swiperjs", "#tilt", "#fullstack"],
+    "github": "https://github.com/DavidIrvine-TW/vapester",
+    "livelink": "https://marvdev-newstore.myshopify.com",
+    "images": ["public/assets/vapesterOne.jpg","public/assets/vapesterTwo.jpg","public/assets/vapesterThree.jpg","public/assets/vapesterFour.jpg", "public/assets/vapesterFive.jpg", "public/assets/vapesterSix.jpg"],
+    "align" : "left"
+}]
