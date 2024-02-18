@@ -8,7 +8,7 @@
     "features" : "",
     "livelink" : "https://davidirvine-tw.github.io/photosnap-website/",
     "github" : "https://github.com/DavidIrvine-TW/photosnap-website",
-    "tags" : ["#blog", "#redux", "#npm", "#react", "#tailwind", "#figma", "#css-grid", "#website", "#vite"],
+    "tags" : ["#blog", "#react", "#tailwind", "#figma", "#css-grid", "#website", "#vite"],
     "images": ["./assets/photosnapOne.jpg","./assets/photosnapTwo.jpg","./assets/photosnapThree.jpg"],
     "align" : "right"
 

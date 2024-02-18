@@ -11,7 +11,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className=" page-width py-[7rem] tb900:py-[9rem] px-[1.75rem] bg-bgOffWhite "
+      className=" page-width py-[7rem] tb900:py-[9rem] px-[1.75rem] "
     >
       <div className="flex flex-col-reverse tb900:flex-row items-center justify-center gap-[2rem] tb900:gap-[6rem] w-full max-w-[1000px] mx-auto ">
         <div className=" flex flex-col max-w-[500px] tb900:w-[50%] relative ">

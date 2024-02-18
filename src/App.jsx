@@ -12,7 +12,7 @@ function App() {
   const wrapperClass = menu ? "overflow-hidden" : "min-h-screen";
 
   return (
-    <div id="wrapper" className={`${wrapperClass} bg-bgOffWhite`}>
+    <div id="wrapper" className={`${wrapperClass} bg-gradient-to-b from-bgOffWhite to-slate-100`}>
       <Header menu={menu} setMenu={setMenu} />
 
       <main className="w-full">

@@ -93,8 +93,8 @@ function About() {
           </h4>
           <p className="body-text ">
             Hi, my name is David, but my friends call me Marv. I'm a Frontend
-            Developer. I prefer to work from a design, but I'm also OK with
-            developing from a firm vision.
+            Developer. I prefer to work from a design, but I'm also OK
+            beginning development from a firm vision.
             <br />
             <br />
             My frameworks of choice are React and Next.js in combination with

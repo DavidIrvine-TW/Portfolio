@@ -1,7 +1,5 @@
 import React from "react";
 import Briefcase from "../../public/assets/briefcase.png";
-
-
 import vapesterData from "../../public/assets/vapester.json";
 import kanbanData from "../../public/assets/kanban.json";
 import trailerviewData from "../../public/assets/trailerview.json";
