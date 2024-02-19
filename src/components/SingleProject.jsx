@@ -59,7 +59,6 @@ const SingleProject = ({
                 className="object-cover cursor-grab "
                 src={image}
                 alt="porfolio image"
-                loading="lazy"
               />
             </SwiperSlide>
           ))}
@@ -91,6 +90,7 @@ const SingleProject = ({
                 key={index}
                 src={`https://skillicons.dev/icons?i=${tech}`}
                 alt={tech}
+                loading="eager"
               />
             );
           })}

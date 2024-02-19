@@ -63,7 +63,7 @@ function Hero() {
 
         <div className="tb900:max-w-[50%]">
           <div className="hero-img w-[280px] h-[280px] tb500:w-[350px] tb500:h-[350px] overflow-hidden relative">
-            <img src={HeroImgGray} alt="profile image" />
+            <img src={HeroImgGray} alt="profile image" loading="eager" />
             {/* <div className="hero-img-overlay"></div> */}
           </div>
         </div>
@@ -79,6 +79,7 @@ function Hero() {
               <img
                 src={`https://skillicons.dev/icons?i=${skill}`}
                 alt="skills-icons"
+                loading="eager"
               />
               <div className="tooltip">{skill}</div>
             </li>
