@@ -130,11 +130,11 @@ const Contact = () => {
                 </span>
                 <span
                   onClick={() =>
-                    copyEmailToClipboard("david.irvineakamarv@gmail.com")
+                    copyEmailToClipboard("marv@marv-dev.com")
                   }
                   className="font-Mulish text-gray-500 text-[.9rem] hover:text-babyblue cursor-pointer  dk:text-[1rem]"
                 >
-                  david.irvineakamarv@gmail.com
+                  marv@marv-dev.com
                 </span>
               </div>
             </div>
