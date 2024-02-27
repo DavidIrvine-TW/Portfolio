@@ -5,7 +5,7 @@ import study from "../../public/assets/study.gif"
 import synth from "../../public/assets/synth.gif"
 import IconAbout from "../icons/iconAbout";
 import Me from "../../public/assets/social-media.png";
-import MyResume from "../../public/assets/David_Irvine_Resume_WebDev_Feb_2024.pdf"
+import MyResume from "../../public/assets/David_Irvine_Web_Developer.pdf"
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
