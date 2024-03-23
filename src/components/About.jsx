@@ -89,16 +89,14 @@ function About() {
             <img src={Me} alt="about icon" className="w-[30px] h-[30px]" />
           </h3>
           <h4 className="section-subheading text-center tb900:text-left">
-            Front-End Developer based in Scotland, UK
+            Web Developer based in Scotland, UK
           </h4>
           <p className="body-text ">
-            Hi, my name is David, but my friends call me Marv. I'm a Frontend
-            Developer. I prefer to work from a design, but I'm also OK
-            beginning development from a firm vision.
+            Hi, my name is David, but my friends call me Marv. I excel at translating designs into code .
             <br />
             <br />
             My frameworks of choice are React and Next.js in combination with
-            Tailwind CSS. For e-commerce builds I use the Shopify CMS.
+            Tailwind CSS or SASS. For e-commerce builds I prefer to use the Shopify CMS.
           </p>
           <button onClick={openResume} className="btn-primary mt-[2rem] tb900:mt-[1rem] mx-auto tb900:mx-0 w-max tb900:w-full">
             my CV/Resume
