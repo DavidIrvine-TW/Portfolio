@@ -4,7 +4,7 @@
     "nameIcon": "./assets/online-shopping.png",
     "nameIconAlt": "online shopping icon",
     "tech": ["html", "css", "js"],
-    "blurb": "Shopify 2.0 storefront template. The Vapester storefront is a complete e-commerce solution. This multipage site includes product collections, search, filtering, cart and checkout pages. All store data is held and managed by the Shopify CMS.",
+    "blurb": "Full-stack Shopify 2.0 storefront template for Vapester. Offers a comprehensive e-commerce solution with multipage functionality including product collections, search, filtering, cart, and checkout pages. Utilizes Shopify CMS for data management.",
     "tags": ["#e-commerce", "#html", "#css", "#javascript", "#shopify", "#liquid", "#template", "#ajax", "#leafletjs", "#swiperjs", "#tilt", "#fullstack"],
     "github": "https://github.com/DavidIrvine-TW/vapester",
     "livelink": "https://marvdev-newstore.myshopify.com",
