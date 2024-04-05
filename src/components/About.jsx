@@ -21,15 +21,6 @@ function About() {
   }
 
 
-
-
-
-
-
-
-
-
-
   return (
     <section
       id="about"
@@ -92,7 +83,7 @@ function About() {
             Web Developer based in Scotland, UK
           </h4>
           <p className="body-text ">
-            Hi, my name is David, but my friends call me Marv. I excel at translating designs into code .
+            Hi, my name is David, but my friends call me Marv. I excel at translating designs into code.
             <br />
             <br />
             My frameworks of choice are React and Next.js in combination with
