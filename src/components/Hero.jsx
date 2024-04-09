@@ -16,7 +16,7 @@ function Hero() {
       <div className="flex flex-col-reverse tb900:flex-row items-center justify-center gap-[2rem] tb900:gap-[6rem] w-full max-w-[1000px] mx-auto ">
         <div className=" flex flex-col max-w-[500px] tb900:w-[50%] relative ">
           <h2 className="text-center tb900:text-left text-mob-title font-Rubik font-bold tb500:text-title-dk flex flex-col text-header-txt my-[1.25rem] relative">
-            Full-Stack React Developer
+            Front-End React Developer
             <img
               className="hidden tb900:block w-[45px] tb500:w-[60px] h-auto absolute bottom-0 right-[0%] tb900:right-[10%] "
               src={waving}
